@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">ComicBookReader</string>
+
+<string-array name="image_ids">
+    <item>@drawable/batman</item>
+    <item>@drawable/batman</item>
+    <item>@drawable/batman</item>
+    <item>@drawable/batman</item>
+    <item>@drawable/batman</item>
+
+</string-array>
+
 </resources>
