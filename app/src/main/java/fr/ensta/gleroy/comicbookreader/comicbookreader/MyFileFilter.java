@@ -42,7 +42,7 @@ public class MyFileFilter{
             Log.d("Files", "FileName:" + this.files[i].getName());
         }
     }
-    public void filterFile(){
+    public ArrayList<String> filterFile(){
         Log.d("Launch", "FilterFile method");
         this.booksName = new ArrayList<String>();
         for(int idFile = 0; idFile < this.files.length; idFile++) {
@@ -53,6 +53,7 @@ public class MyFileFilter{
                 Log.i("instance initializer: ", this.files[idFile].getName());
             }
         }
+        return this.booksName;
 
     }
 }

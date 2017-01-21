@@ -11,14 +11,9 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="fr.ensta.gleroy.comicbookreader.comicbookreader.Home">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Your books"/>
-
     <GridView
         android:id="@+id/gridView"
-        android:layout_width="fill_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:columnWidth="100dp"
         android:drawSelectorOnTop="true"
@@ -30,6 +25,16 @@
         android:clickable="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-         />
+        android:layout_marginTop="50dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Your books"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:textSize="20sp" />
 
 </RelativeLayout>

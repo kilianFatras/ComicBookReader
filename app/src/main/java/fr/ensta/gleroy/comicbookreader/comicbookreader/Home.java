@@ -23,22 +23,27 @@ public class Home extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
-        gridView = (GridView) findViewById(R.id.gridView);
-        gridAdapter = new GridViewAdapter(this, R.layout.grid_item_layout, getData());
-        gridView.setAdapter(gridAdapter);
-
         MyFileFilter testFileFilter = new MyFileFilter();
         testFileFilter.viewFile();
-        testFileFilter.filterFile();
+        ArrayList<String> booksName = testFileFilter.filterFile();
+
+        gridView = (GridView) findViewById(R.id.gridView);
+        gridAdapter = new GridViewAdapter(this, R.layout.grid_item_layout, getData(booksName));
+        gridView.setAdapter(gridAdapter);
+
+
     }
 
     // Prepare some dummy data for gridview
-    private ArrayList<ImageItem> getData() {
+    private ArrayList<ImageItem> getData(ArrayList<String> booksName) {
         final ArrayList<ImageItem> imageItems = new ArrayList<>();
-        TypedArray imgs = getResources().obtainTypedArray(R.array.image_ids);
-        for (int i = 0; i < imgs.length(); i++) {
-            Bitmap bitmap = BitmapFactory.decodeResource(getResources(), imgs.getResourceId(i, -1));
-            imageItems.add(new ImageItem(bitmap, "Image#" + i));
+
+        for (int i = 0; i < booksName.size(); i++) {
+            Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.batman);
+            String fileName = booksName.get(i);
+            // /!\ Revoir la facon de retirer l'extension si different de 4 caracteres.
+            String bookName = fileName.substring(0, fileName.length() - 4);
+            imageItems.add(new ImageItem(bitmap, bookName));
         }
         return imageItems;
     }
