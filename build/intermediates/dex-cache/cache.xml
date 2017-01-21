@@ -2,58 +2,76 @@
 <items version="2" >
 
     <item
-        is-multidex="false"
-        jar="/home/gleroy/AndroidStudioProjects/ComicBookReader/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
-        <dex dex="/home/gleroy/AndroidStudioProjects/ComicBookReader/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-23.4.0_859185e5a708078f14c4a94644be1d0d05b2aa23.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/gleroy/AndroidStudioProjects/ComicBookReader/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/classes.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="/home/gleroy/ComicBookReader/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/classes.jar"
+        jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
-        <dex dex="/home/gleroy/AndroidStudioProjects/ComicBookReader/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-23.4.0_8d401c156d08af3245714f27b38f328acc0b92d6.jar" />
+        <dex dex="/home/gleroy/ComicBookReader/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-23.4.0_aefa33f8ffbada0336c00aa356844ff1434e0697/classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="/home/gleroy/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/23.4.0/support-annotations-23.4.0.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="/home/gleroy/ComicBookReader/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
-        <dex dex="/home/gleroy/AndroidStudioProjects/ComicBookReader/app/build/intermediates/pre-dexed/debug/support-annotations-23.4.0_ee02aa2a7635d3fa229d3dd865398c3a5a4bccc4.jar" />
+        sha1="cfca5836391bd9657900130040184aee39e15051">
+        <dex dex="/home/gleroy/ComicBookReader/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_d3dd008944950a171cdcc72a761d2681a149c577/classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="/home/gleroy/AndroidStudioProjects/ComicBookReader/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
-        <dex dex="/home/gleroy/AndroidStudioProjects/ComicBookReader/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-23.4.0_6d77947464519854c89847a6d85ccd45a09b1c44.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/gleroy/AndroidStudioProjects/ComicBookReader/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.4.0/jars/classes.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="/home/gleroy/ComicBookReader/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.4.0/jars/classes.jar"
+        jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
-        <dex dex="/home/gleroy/AndroidStudioProjects/ComicBookReader/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-23.4.0_610a49a4108571320d65fc40e1323303056d733d.jar" />
+        <dex dex="/home/gleroy/ComicBookReader/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-23.4.0_1348ce5c84772a676df63530a3bc30764f3e86ef/classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="/home/gleroy/AndroidStudioProjects/ComicBookReader/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/libs/internal_impl-23.4.0.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="/home/gleroy/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/23.4.0/support-annotations-23.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
+        <dex dex="/home/gleroy/ComicBookReader/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-23.4.0_ee02aa2a7635d3fa229d3dd865398c3a5a4bccc4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/gleroy/ComicBookReader/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a311cbabda74660887e59e000fd96a4297c6452e">
+        <dex dex="/home/gleroy/ComicBookReader/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_2ef922732240880232295f0876fc956052f3c873/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/gleroy/ComicBookReader/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
+        <dex dex="/home/gleroy/ComicBookReader/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-23.4.0_3f048a835a2a33b28bff8a6ec69fb7ba0af2128e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/gleroy/ComicBookReader/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/libs/internal_impl-23.4.0.jar"
+        jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
-        <dex dex="/home/gleroy/AndroidStudioProjects/ComicBookReader/app/build/intermediates/pre-dexed/debug/internal_impl-23.4.0_9f3f7fff68d05f9600998764ff83346f98d43094.jar" />
+        <dex dex="/home/gleroy/ComicBookReader/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-23.4.0_9054d2ce65ef002860c400ddff4b15ce85ccd453/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/gleroy/ComicBookReader/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
+        <dex dex="/home/gleroy/ComicBookReader/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-23.4.0_c9bbf4f3ed4fe140e1673198313831073ccb42de/classes.dex" />
     </item>
 
 </items>

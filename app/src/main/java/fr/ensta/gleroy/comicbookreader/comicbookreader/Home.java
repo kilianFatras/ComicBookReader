@@ -1,13 +1,17 @@
 package fr.ensta.gleroy.comicbookreader.comicbookreader;
 
+import android.content.Intent;
 import android.content.res.TypedArray;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.os.Environment;
+import android.support.annotation.IntegerRes;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.GridView;
 
+import java.io.File;
 import java.util.ArrayList;
 
 public class Home extends AppCompatActivity {
@@ -22,6 +26,10 @@ public class Home extends AppCompatActivity {
         gridView = (GridView) findViewById(R.id.gridView);
         gridAdapter = new GridViewAdapter(this, R.layout.grid_item_layout, getData());
         gridView.setAdapter(gridAdapter);
+
+        MyFileFilter testFileFilter = new MyFileFilter();
+        testFileFilter.viewFile();
+        testFileFilter.filterFile();
     }
 
     // Prepare some dummy data for gridview
