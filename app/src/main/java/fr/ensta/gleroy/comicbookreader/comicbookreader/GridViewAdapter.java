@@ -2,6 +2,7 @@ package fr.ensta.gleroy.comicbookreader.comicbookreader;
 
 import android.app.Activity;
 import android.content.Context;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -38,6 +39,7 @@ public class GridViewAdapter extends ArrayAdapter {
             holder = new ViewHolder();
             holder.imageTitle = (TextView) row.findViewById(R.id.text);
             holder.image = (ImageView) row.findViewById(R.id.image);
+
             row.setTag(holder);
         } else {
             holder = (ViewHolder) row.getTag();
@@ -46,6 +48,7 @@ public class GridViewAdapter extends ArrayAdapter {
         ImageItem item = (ImageItem) data.get(position);
         holder.imageTitle.setText(item.getTitle());
         holder.image.setImageBitmap(item.getImage());
+        holder.image.setOnClickListener(new MyLovelyOnClickListener(item.getFileName()));
         return row;
     }
 
@@ -53,5 +56,21 @@ public class GridViewAdapter extends ArrayAdapter {
         TextView imageTitle;
         ImageView image;
     }
+
+    public class MyLovelyOnClickListener implements View.OnClickListener
+    {
+
+        String fileName;
+        public MyLovelyOnClickListener(String filename) {
+            this.fileName = filename;
+        }
+
+        @Override
+        public void onClick(View v)
+        {
+            Log.i("Click on", fileName);
+        }
+
+    };
 }
 

@@ -13,6 +13,7 @@ public class MyFileFilter{
     File[] files;
     File directory;
     ArrayList<String> booksName ;
+    ArrayList<File> booksFile;
 
     // Constructor
     MyFileFilter(){
@@ -42,18 +43,20 @@ public class MyFileFilter{
             Log.d("Files", "FileName:" + this.files[i].getName());
         }
     }
-    public ArrayList<String> filterFile(){
+    public ArrayList<File> filterFile(){
         Log.d("Launch", "FilterFile method");
-        this.booksName = new ArrayList<String>();
+        //this.booksName = new ArrayList<String>();
+        booksFile = new ArrayList<File>();
         for(int idFile = 0; idFile < this.files.length; idFile++) {
             String fileName = this.files[idFile].getName();
 
             if(fileName.toUpperCase().endsWith(".CBR") || fileName.toUpperCase().endsWith(".CBZ")) {
-                this.booksName.add(this.booksName.size(),this.files[idFile].getName());
+                //this.booksName.add(this.booksName.size(),this.files[idFile].getName());
+                booksFile.add(booksFile.size(), files[idFile]);
                 Log.i("instance initializer: ", this.files[idFile].getName());
             }
         }
-        return this.booksName;
+        return booksFile;
 
     }
 }
