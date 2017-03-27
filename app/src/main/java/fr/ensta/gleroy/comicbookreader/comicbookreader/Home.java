@@ -28,6 +28,8 @@ import java.util.zip.ZipEntry;
 import java.util.zip.ZipFile;
 import java.util.zip.ZipInputStream;
 
+import static android.provider.AlarmClock.EXTRA_MESSAGE;
+
 public class Home extends AppCompatActivity {
     private GridView gridView;
     private GridViewAdapter gridAdapter;
@@ -39,7 +41,7 @@ public class Home extends AppCompatActivity {
 
         MyFileFilter testFileFilter = new MyFileFilter();
         testFileFilter.viewFile();
-        ArrayList<File> booksFile = testFileFilter.filterFile();
+        final ArrayList<File> booksFile = testFileFilter.filterFile();
 
         gridView = (GridView) findViewById(R.id.gridView);
         gridAdapter = new GridViewAdapter(this, R.layout.grid_item_layout, getData(booksFile));
@@ -54,27 +56,10 @@ public class Home extends AppCompatActivity {
         gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 //                final TextView mTextView = (TextView)view;
-                Log.d("Position",Integer.toString(position));
-                /*switch (position) {
-                    case 0:
-                        Intent newActivity0 = new Intent(DialogActivity.this,NewActivity0.class);
-                        startActivity(newActivity0);
-                        break;
-                    case 1:
-                        Intent newActivity1 = new Intent(DialogActivity.this,NewActivity1.class);
-                        startActivity(newActivity1);
-                        break;
-                    case 0:
-                        Intent newActivity2 = new Intent(DialogActivity.this,NewActivity2.class);
-                        startActivity(newActivity2);
-                        break;
-                    case 0:
-                        Intent newActivity3 = new Intent(DialogActivity.this,NewActivity3.class);
-                        startActivity(newActivity3);
-                        break;
-                    default:
-                        // Nothing do!
-                }*/
+                ArrayList<ImageItem> books = getData(booksFile);
+                String fileName = books.get((int)id).getFileName();
+                Log.d("Filename", fileName);
+                openBook(view, fileName);
 
             }
         });
@@ -82,12 +67,10 @@ public class Home extends AppCompatActivity {
     }
 
 
-    public void openBook(View view){
+    public void openBook(View view, String fileName){
         Intent intent = new Intent(this, Book.class);
-        Log.d("open Book", "openBook: ");
-        //ImageItem book = (ImageItem) view;
-        //String message = editText.getText().toString();
-        //intent.putExtra(EXTRA_MESSAGE, message);
+        Log.d("open Book", fileName);
+        intent.putExtra(EXTRA_MESSAGE, fileName);
         startActivity(intent);
     }
 

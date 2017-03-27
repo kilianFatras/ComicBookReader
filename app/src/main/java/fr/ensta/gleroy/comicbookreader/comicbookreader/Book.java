@@ -1,12 +1,21 @@
 package fr.ensta.gleroy.comicbookreader.comicbookreader;
 
 import android.annotation.SuppressLint;
+import android.graphics.Bitmap;
+import android.graphics.drawable.BitmapDrawable;
+import android.os.Environment;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.os.Handler;
+import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
+import android.widget.FrameLayout;
+
+import java.io.File;
+
+import static android.provider.AlarmClock.EXTRA_MESSAGE;
 
 /**
  * An example full-screen activity that shows and hides the system UI (i.e.
@@ -83,11 +92,28 @@ public class Book extends AppCompatActivity {
         }
     };
 
+    private int pageNumber = 1;
+    private Bitmap page;
+    private ZipBook book;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_book);
+
+        // Get current book
+        String fileName = getIntent().getStringExtra(EXTRA_MESSAGE);
+        Log.d("From book class:", fileName);
+
+        File bookFile = new File(Environment.getExternalStorageDirectory() + File.separator + "ComicBooks"+ File.separator + fileName);
+        book = new ZipBook(bookFile);
+        if(book.getAllPages() == 1){
+            page = book.getPageBm(pageNumber);
+        }else{
+            Log.d("404", "Enable to load page ");
+        }
+
+
 
         mVisible = true;
         mControlsView = findViewById(R.id.fullscreen_content_controls);
@@ -102,10 +128,11 @@ public class Book extends AppCompatActivity {
             }
         });
 
+        mContentView.setBackground(new BitmapDrawable(page));
         // Upon interacting with UI controls, delay any scheduled hide()
         // operations to prevent the jarring behavior of controls going away
         // while interacting with the UI.
-        findViewById(R.id.dummy_button).setOnTouchListener(mDelayHideTouchListener);
+//        findViewById(R.id.dummy_button).setOnTouchListener(mDelayHideTouchListener);
     }
 
     @Override
@@ -124,6 +151,21 @@ public class Book extends AppCompatActivity {
         } else {
             show();
         }
+    }
+
+    public void nextPage(View v){
+        pageNumber += 1;
+        page = book.getPageBm(pageNumber);
+        mContentView.setBackground(new BitmapDrawable(page));
+        Log.d("Page", Integer.toString(pageNumber));
+
+    }
+
+    public void previousPage(View v){
+        pageNumber -= 1;
+        page = book.getPageBm(pageNumber);
+        mContentView.setBackground(new BitmapDrawable(page));
+        Log.d("Page", Integer.toString(pageNumber));
     }
 
     private void hide() {
