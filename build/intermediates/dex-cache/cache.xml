@@ -2,121 +2,121 @@
 <items version="2" >
 
     <item
-        is-multidex="true"
-        jar="/home/gleroy/projet-dev/ComicBookReader/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.0.0/jars/libs/internal_impl-24.0.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="fcaf463e10e69c1923ccf1edeba3b4196d239e00">
-        <dex dex="/home/gleroy/projet-dev/ComicBookReader/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.0.0_e1c31203889e03ba9ab1210807ddf766ec7dfdd7/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/gleroy/projet-dev/ComicBookReader/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
-        <dex dex="/home/gleroy/projet-dev/ComicBookReader/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-23.4.0_03e3b4e37c14d4c906409bc092c5a634e947a5c0/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/gleroy/projet-dev/ComicBookReader/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/9.8.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="e3234cd25e23069abd48ecd2117bc0e8011bf45a">
-        <dex dex="/home/gleroy/projet-dev/ComicBookReader/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-appindexing-9.8.0_5fbaa293c7886d9f1dd54879ea539c1b01bcbcdb/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/gleroy/projet-dev/ComicBookReader/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.4.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
-        <dex dex="/home/gleroy/projet-dev/ComicBookReader/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-23.4.0_4910c2b7251406a08d50ef2757e9207a597bf946/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/gleroy/projet-dev/ComicBookReader/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="feb89dc67c402c78ead15f6f9eeb492baea6cca3">
-        <dex dex="/home/gleroy/projet-dev/ComicBookReader/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_18562a57890ab9bb69bf056e40456dbc64da1161/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/gleroy/projet-dev/ComicBookReader/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.8.0/jars/classes.jar"
+        is-multidex="false"
+        jar="/Users/Kilian/Programmation/ENSTA_2A/IN204/PROJET/ComicBookReader/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.8.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="9f6d236bac26d02b410e4ee186ba517ace5ee661">
-        <dex dex="/home/gleroy/projet-dev/ComicBookReader/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-basement-9.8.0_db07e48fb5af4a4a0881d0ab1046fceea5935e28/classes.dex" />
+        <dex dex="/Users/Kilian/Programmation/ENSTA_2A/IN204/PROJET/ComicBookReader/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-basement-9.8.0_a6e6c416b2ee3eb04c884ed59be73daf4226c1b1.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="/home/gleroy/projet-dev/ComicBookReader/app/build/intermediates/exploded-aar/com.google.firebase/firebase-common/9.8.0/jars/classes.jar"
+        is-multidex="false"
+        jar="/Users/Kilian/Programmation/ENSTA_2A/IN204/PROJET/ComicBookReader/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.0.0/jars/libs/internal_impl-24.0.0.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="c61641e333fa88da21758bab8cc28ee16604b05f">
-        <dex dex="/home/gleroy/projet-dev/ComicBookReader/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-common-9.8.0_9ea08bf9e82671be4697083e7a7f52e550e0ffe8/classes.dex" />
+        sha1="fcaf463e10e69c1923ccf1edeba3b4196d239e00">
+        <dex dex="/Users/Kilian/Programmation/ENSTA_2A/IN204/PROJET/ComicBookReader/app/build/intermediates/pre-dexed/debug/internal_impl-24.0.0_65611519048be5b090736096152b39d03f24c2d0.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="/home/gleroy/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/24.0.0/support-annotations-24.0.0.jar"
+        is-multidex="false"
+        jar="/Users/Kilian/Programmation/ENSTA_2A/IN204/PROJET/ComicBookReader/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="2943c74db6d4346ab8c6531adac91fa05c137c40">
-        <dex dex="/home/gleroy/projet-dev/ComicBookReader/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-24.0.0_902230c03d0c29a2b0b4094f2b873db6fe3bda13/classes.dex" />
+        sha1="c8ae39dc0a2693f8ca5b1bfea186f8db2670a78f">
+        <dex dex="/Users/Kilian/Programmation/ENSTA_2A/IN204/PROJET/ComicBookReader/app/build/intermediates/pre-dexed/debug/instant-run-bootstrap_dbb10aab3a48ca4ebd050ed151ec252cd36ce75c.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="/home/gleroy/projet-dev/ComicBookReader/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.8.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="7e92aadd0697922316d1395c1887a23aebec640a">
-        <dex dex="/home/gleroy/projet-dev/ComicBookReader/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-base-9.8.0_0e4a35dc5dd1480b0a5be022300403e3f5c2f406/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/gleroy/projet-dev/ComicBookReader/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/9.8.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="bf2e1838e4428616c1aa26edf43de72b5b99bf84">
-        <dex dex="/home/gleroy/projet-dev/ComicBookReader/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-tasks-9.8.0_27a8412c092fbbb5a40b5540e05c32f0f0f5a58c/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/gleroy/projet-dev/ComicBookReader/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
-        <dex dex="/home/gleroy/projet-dev/ComicBookReader/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-23.4.0_f549c6d5ed10d64b56ccdb74e59d1578a1067def/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/gleroy/projet-dev/ComicBookReader/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.0.0/jars/classes.jar"
+        is-multidex="false"
+        jar="/Users/Kilian/Programmation/ENSTA_2A/IN204/PROJET/ComicBookReader/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.0.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="2f7e6e2dad1bccaf68a8820820adc6c0d5b96d37">
-        <dex dex="/home/gleroy/projet-dev/ComicBookReader/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-24.0.0_7cb3ddc6b76cca8b9e51b2820954caea1b76de20/classes.dex" />
+        <dex dex="/Users/Kilian/Programmation/ENSTA_2A/IN204/PROJET/ComicBookReader/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-24.0.0_5145afa1b8cf2e5ed15eebf610dbb06c75d1c5a9.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="/home/gleroy/projet-dev/ComicBookReader/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        is-multidex="false"
+        jar="/Users/Kilian/Programmation/ENSTA_2A/IN204/PROJET/ComicBookReader/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.4.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="1b8c962eb9e67ccbc543fba3f05237817709f9b8">
-        <dex dex="/home/gleroy/projet-dev/ComicBookReader/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_4bd812d14e2a3dc8e7130aa0f2cc28177d5d352d/classes.dex" />
+        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
+        <dex dex="/Users/Kilian/Programmation/ENSTA_2A/IN204/PROJET/ComicBookReader/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-23.4.0_0173fcffdde0078c548a0981e4f241f641330fe6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Kilian/Programmation/ENSTA_2A/IN204/PROJET/ComicBookReader/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
+        <dex dex="/Users/Kilian/Programmation/ENSTA_2A/IN204/PROJET/ComicBookReader/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-23.4.0_4282387625023ae70663412b5df642d1ddea839b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Kilian/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/24.0.0/support-annotations-24.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="2943c74db6d4346ab8c6531adac91fa05c137c40">
+        <dex dex="/Users/Kilian/Programmation/ENSTA_2A/IN204/PROJET/ComicBookReader/app/build/intermediates/pre-dexed/debug/support-annotations-24.0.0_828e972fc9ad62eb6e738dc94c87e65c1c131ffd.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Kilian/Programmation/ENSTA_2A/IN204/PROJET/ComicBookReader/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
+        <dex dex="/Users/Kilian/Programmation/ENSTA_2A/IN204/PROJET/ComicBookReader/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-23.4.0_9259f515ec1ada755aa2645da0f93aff97ca744c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Kilian/Programmation/ENSTA_2A/IN204/PROJET/ComicBookReader/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.8.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7e92aadd0697922316d1395c1887a23aebec640a">
+        <dex dex="/Users/Kilian/Programmation/ENSTA_2A/IN204/PROJET/ComicBookReader/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-base-9.8.0_6f521b18987a05ed68d73da7ed0e7e5bca71016e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Kilian/Programmation/ENSTA_2A/IN204/PROJET/ComicBookReader/app/build/intermediates/exploded-aar/com.google.firebase/firebase-common/9.8.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c61641e333fa88da21758bab8cc28ee16604b05f">
+        <dex dex="/Users/Kilian/Programmation/ENSTA_2A/IN204/PROJET/ComicBookReader/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-common-9.8.0_6cf355662286337677351f5e8c60a1fa83f1208d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Kilian/Programmation/ENSTA_2A/IN204/PROJET/ComicBookReader/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/9.8.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e3234cd25e23069abd48ecd2117bc0e8011bf45a">
+        <dex dex="/Users/Kilian/Programmation/ENSTA_2A/IN204/PROJET/ComicBookReader/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-appindexing-9.8.0_2d17caf1c89ab848a38b858855e18a2700b0385d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Kilian/Programmation/ENSTA_2A/IN204/PROJET/ComicBookReader/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="cf93b99b5285ced022b3b6b92686be4c5dbda0ae">
+        <dex dex="/Users/Kilian/Programmation/ENSTA_2A/IN204/PROJET/ComicBookReader/app/build/intermediates/pre-dexed/debug/instant-run_2cecf8273b4e87c13e7b3a3bffa7d42afabf50cc.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Kilian/Programmation/ENSTA_2A/IN204/PROJET/ComicBookReader/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/9.8.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="bf2e1838e4428616c1aa26edf43de72b5b99bf84">
+        <dex dex="/Users/Kilian/Programmation/ENSTA_2A/IN204/PROJET/ComicBookReader/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-tasks-9.8.0_eee6300cc488592b0fce378dc9ebcc66290c9034.jar" />
     </item>
 
 </items>

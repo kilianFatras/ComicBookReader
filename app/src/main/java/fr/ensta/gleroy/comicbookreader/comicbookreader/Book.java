@@ -154,7 +154,10 @@ public class Book extends AppCompatActivity {
     }
 
     public void nextPage(View v){
-        pageNumber += 1;
+        if (pageNumber == book.pages.size() - 1) {
+            pageNumber = book.pages.size() - 1;
+        }
+        else pageNumber += 1;
         page = book.getPageBm(pageNumber);
         mContentView.setBackground(new BitmapDrawable(page));
         Log.d("Page", Integer.toString(pageNumber));
@@ -162,7 +165,10 @@ public class Book extends AppCompatActivity {
     }
 
     public void previousPage(View v){
-        pageNumber -= 1;
+        if (pageNumber == 0) {
+            pageNumber = 0;
+        }
+        else pageNumber -= 1;
         page = book.getPageBm(pageNumber);
         mContentView.setBackground(new BitmapDrawable(page));
         Log.d("Page", Integer.toString(pageNumber));

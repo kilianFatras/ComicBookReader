@@ -85,19 +85,20 @@ public class ZipBook {
 
     public int getAllPages(){
         try {
-
+            String comicBookPath = Environment.getExternalStorageDirectory() + File.separator + "ComicBooks";
             while ((zEntry = zipStream.getNextEntry()) != null) {
+                String filePath = comicBookPath + File.separator + zEntry.getName();
+                Log.d("filepath is : ", filePath);
                 Log.d("Unzip", "Unzipping " + zEntry.getName());
-                if(zEntry.isDirectory()){
+                if(zEntry.isDirectory()) {
                     Log.i("Directory", zEntry.getName());
-                    File directory = new File(Environment.getExternalStorageDirectory()+
-                            File.separator+"ComicBooks"+
-                            File.separator+zEntry.getName());
+                    File directory = new File(filePath);
                     directory.mkdirs();
 
-                }else {
-                    if(zEntry.getName().endsWith(".jpeg")){
+                } else if(zEntry.getName().endsWith(".jpeg")){
 
+                    File image = new File(filePath);
+                    if(!(new File(filePath)).exists()){
                         BufferedInputStream is = new BufferedInputStream(zipFile.getInputStream(zEntry));
 
                         // establish buffer for writing file
@@ -106,17 +107,19 @@ public class ZipBook {
 
                         is.read(data, 0, BUFFER);
 
-
                         Bitmap bitmap = BitmapFactory.decodeByteArray(data, 0, data.length);
                         FileOutputStream bmout = null;
+
                         try {
-                            File file = new File(Environment.getExternalStorageDirectory()+File.separator+"ComicBooks", zEntry.getName());
-                            bmout = new FileOutputStream(file);
+                            //Log.d("UNCOMPRESS STATUS page ", );
+
+                            bmout = new FileOutputStream(image);
                             bitmap.compress(Bitmap.CompressFormat.JPEG, 100, bmout); // bmp is your Bitmap instance
 
-                            pages.add(file);
                         } catch (Exception e) {
+
                             e.printStackTrace();
+                            Log.d("FUCK", "GENRE ENORME FUCK !!!!");
                         } finally {
                             try {
                                 if (bmout != null) {
@@ -130,10 +133,9 @@ public class ZipBook {
 
                         is.close();
                         zipStream.closeEntry();
-
-
-
                     }
+                    pages.add(image);
+
                 }
                 zipStream.closeEntry();
             }
