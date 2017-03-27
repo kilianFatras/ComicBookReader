@@ -3,12 +3,21 @@
 
     <item
         is-multidex="true"
-        jar="/home/gleroy/ComicBookReader/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/classes.jar"
+        jar="/home/gleroy/ComicBookReader/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.0.0/jars/libs/internal_impl-24.0.0.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
-        <dex dex="/home/gleroy/ComicBookReader/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-23.4.0_aefa33f8ffbada0336c00aa356844ff1434e0697/classes.dex" />
+        sha1="fcaf463e10e69c1923ccf1edeba3b4196d239e00">
+        <dex dex="/home/gleroy/ComicBookReader/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.0.0_17e7f7bdeea0f1f9c6045b1362238590e06324eb/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/gleroy/ComicBookReader/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/9.8.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e3234cd25e23069abd48ecd2117bc0e8011bf45a">
+        <dex dex="/home/gleroy/ComicBookReader/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-appindexing-9.8.0_75a33360035cc268f0757d7488e4ecc609c53d0e/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -16,7 +25,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="16df3bc625f923643455bbadbda650eb19279075">
+        sha1="9fc85a38897d8c54fa4e35139e3080308eb824e1">
         <dex dex="/home/gleroy/ComicBookReader/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_d3dd008944950a171cdcc72a761d2681a149c577/classes.dex" />
     </item>
     <item
@@ -30,39 +39,21 @@
     </item>
     <item
         is-multidex="true"
-        jar="/home/gleroy/ComicBookReader/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/8.4.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="65d086ee9daaf87b5af62ad24471edafa433354c">
-        <dex dex="/home/gleroy/ComicBookReader/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-appindexing-8.4.0_c79cf8a4711d0b3ff4428e4ac497cc66b8774c8f/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/gleroy/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/23.4.0/support-annotations-23.4.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
-        <dex dex="/home/gleroy/ComicBookReader/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-23.4.0_ee02aa2a7635d3fa229d3dd865398c3a5a4bccc4/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/home/gleroy/ComicBookReader/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="53f3197c732a50580bc8ca4e5f73f4bf33dfe984">
+        sha1="4bd5e08d5b5b4bc9b5dee64103d94f35d7b037f8">
         <dex dex="/home/gleroy/ComicBookReader/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_2ef922732240880232295f0876fc956052f3c873/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/home/gleroy/ComicBookReader/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/jars/classes.jar"
+        jar="/home/gleroy/ComicBookReader/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/9.8.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="fef2b3e4b6b1b0e5fe7b69fa137a5fa55a3182ab">
-        <dex dex="/home/gleroy/ComicBookReader/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-base-8.4.0_5bfd923dfe3f8d4ab679f96637d3eaddfc3cd968/classes.dex" />
+        sha1="bf2e1838e4428616c1aa26edf43de72b5b99bf84">
+        <dex dex="/home/gleroy/ComicBookReader/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-tasks-9.8.0_d859fcc00ad6a2582c7d96802556aa198ad32582/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -75,21 +66,48 @@
     </item>
     <item
         is-multidex="true"
-        jar="/home/gleroy/ComicBookReader/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/libs/internal_impl-23.4.0.jar"
+        jar="/home/gleroy/ComicBookReader/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.8.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
-        <dex dex="/home/gleroy/ComicBookReader/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-23.4.0_9054d2ce65ef002860c400ddff4b15ce85ccd453/classes.dex" />
+        sha1="7e92aadd0697922316d1395c1887a23aebec640a">
+        <dex dex="/home/gleroy/ComicBookReader/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-base-9.8.0_53cec896c24bbe09d462786bf18415545593ca70/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/home/gleroy/ComicBookReader/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.4.0/jars/classes.jar"
+        jar="/home/gleroy/ComicBookReader/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.8.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="8e673cdfadd8f2d98fdb2fda2285c30f6e449782">
-        <dex dex="/home/gleroy/ComicBookReader/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-basement-8.4.0_ae4a0dce77993451534fd2484b2bb81d095745ad/classes.dex" />
+        sha1="9f6d236bac26d02b410e4ee186ba517ace5ee661">
+        <dex dex="/home/gleroy/ComicBookReader/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-basement-9.8.0_dd3f9af821fb00e9cf247c8eab4747ab81a5aec4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/gleroy/ComicBookReader/app/build/intermediates/exploded-aar/com.google.firebase/firebase-common/9.8.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c61641e333fa88da21758bab8cc28ee16604b05f">
+        <dex dex="/home/gleroy/ComicBookReader/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-common-9.8.0_6613920d60135214529decb2bdd85ef86af43d63/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/gleroy/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/24.0.0/support-annotations-24.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="2943c74db6d4346ab8c6531adac91fa05c137c40">
+        <dex dex="/home/gleroy/ComicBookReader/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-24.0.0_902230c03d0c29a2b0b4094f2b873db6fe3bda13/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/gleroy/ComicBookReader/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="2f7e6e2dad1bccaf68a8820820adc6c0d5b96d37">
+        <dex dex="/home/gleroy/ComicBookReader/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-24.0.0_b309e77ff26619eabf93ee1425549ff580a4452e/classes.dex" />
     </item>
     <item
         is-multidex="true"

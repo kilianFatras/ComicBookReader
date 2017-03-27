@@ -11,6 +11,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.GridView;
 
 import com.google.android.gms.appindexing.Action;
@@ -50,6 +51,44 @@ public class Home extends AppCompatActivity {
             Log.d("view name",nextChild.getTag().toString());
         }
 
+        gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+//                final TextView mTextView = (TextView)view;
+                Log.d("Position",Integer.toString(position));
+                /*switch (position) {
+                    case 0:
+                        Intent newActivity0 = new Intent(DialogActivity.this,NewActivity0.class);
+                        startActivity(newActivity0);
+                        break;
+                    case 1:
+                        Intent newActivity1 = new Intent(DialogActivity.this,NewActivity1.class);
+                        startActivity(newActivity1);
+                        break;
+                    case 0:
+                        Intent newActivity2 = new Intent(DialogActivity.this,NewActivity2.class);
+                        startActivity(newActivity2);
+                        break;
+                    case 0:
+                        Intent newActivity3 = new Intent(DialogActivity.this,NewActivity3.class);
+                        startActivity(newActivity3);
+                        break;
+                    default:
+                        // Nothing do!
+                }*/
+
+            }
+        });
+
+    }
+
+
+    public void openBook(View view){
+        Intent intent = new Intent(this, Book.class);
+        Log.d("open Book", "openBook: ");
+        //ImageItem book = (ImageItem) view;
+        //String message = editText.getText().toString();
+        //intent.putExtra(EXTRA_MESSAGE, message);
+        startActivity(intent);
     }
 
     // Prepare some dummy data for gridview
