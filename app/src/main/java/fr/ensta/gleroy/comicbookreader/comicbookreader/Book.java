@@ -155,6 +155,12 @@ public class Book extends AppCompatActivity {
 //        findViewById(R.id.dummy_button).setOnTouchListener(mDelayHideTouchListener);
 
         mContentView.setOnTouchListener(new OnSwipeTouchListener(Book.this) {
+
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                toggle();
+                return super.onTouch(v,event);
+            }
             public void onSwipeTop() {
                 Log.d("Swipe", "top");
 
