@@ -25,7 +25,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="c8ae39dc0a2693f8ca5b1bfea186f8db2670a78f">
+        sha1="69fd2bc006d960a59cc2e0d6dc59c336f7a28cd9">
         <dex dex="/Users/Kilian/Programmation/ENSTA_2A/IN204/PROJET/ComicBookReader/app/build/intermediates/pre-dexed/debug/instant-run-bootstrap_dbb10aab3a48ca4ebd050ed151ec252cd36ce75c.jar" />
     </item>
     <item
@@ -106,7 +106,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="cf93b99b5285ced022b3b6b92686be4c5dbda0ae">
+        sha1="d67310fa96b2958fea687d922dd77d322d01e60e">
         <dex dex="/Users/Kilian/Programmation/ENSTA_2A/IN204/PROJET/ComicBookReader/app/build/intermediates/pre-dexed/debug/instant-run_2cecf8273b4e87c13e7b3a3bffa7d42afabf50cc.jar" />
     </item>
     <item
