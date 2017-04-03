@@ -111,7 +111,6 @@ public class ZipBook {
                         FileOutputStream bmout = null;
 
                         try {
-                            //Log.d("UNCOMPRESS STATUS page ", );
 
                             bmout = new FileOutputStream(image);
                             bitmap.compress(Bitmap.CompressFormat.JPEG, 100, bmout); // bmp is your Bitmap instance
@@ -119,7 +118,6 @@ public class ZipBook {
                         } catch (Exception e) {
 
                             e.printStackTrace();
-                            Log.d("FUCK", "GENRE ENORME FUCK !!!!");
                         } finally {
                             try {
                                 if (bmout != null) {

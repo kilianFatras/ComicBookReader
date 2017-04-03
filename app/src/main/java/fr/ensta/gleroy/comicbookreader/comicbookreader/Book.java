@@ -12,10 +12,12 @@ import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.FrameLayout;
-
+import android.widget.ImageView;
+import android.widget.Toast;
 import java.io.File;
 
 import static android.os.SystemClock.sleep;
+import fr.ensta.gleroy.comicbookreader.comicbookreader.OnSwipeTouchListener;
 import static android.provider.AlarmClock.EXTRA_MESSAGE;
 
 
@@ -152,6 +154,24 @@ public class Book extends AppCompatActivity {
         // while interacting with the UI.
 //        findViewById(R.id.dummy_button).setOnTouchListener(mDelayHideTouchListener);
 
+        mContentView.setOnTouchListener(new OnSwipeTouchListener(Book.this) {
+            public void onSwipeTop() {
+                Log.d("Swipe", "top");
+
+            }
+            public void onSwipeRight() {
+                Log.d("Swipe", "right");
+                previousPage(mContentView);
+            }
+            public void onSwipeLeft() {
+                Log.d("Swipe", "Left");
+                nextPage(mContentView);
+            }
+            public void onSwipeBottom() {
+                Log.d("Swipe", "Bottom");
+            }
+
+        });
     }
 
     @Override
@@ -227,4 +247,6 @@ public class Book extends AppCompatActivity {
         mHideHandler.removeCallbacks(mHideRunnable);
         mHideHandler.postDelayed(mHideRunnable, delayMillis);
     }
+
+
 }
