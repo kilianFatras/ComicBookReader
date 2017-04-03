@@ -15,7 +15,9 @@ import android.widget.FrameLayout;
 
 import java.io.File;
 
+import static android.os.SystemClock.sleep;
 import static android.provider.AlarmClock.EXTRA_MESSAGE;
+
 
 /**
  * An example full-screen activity that shows and hides the system UI (i.e.
@@ -92,9 +94,11 @@ public class Book extends AppCompatActivity {
         }
     };
 
+
     private int pageNumber = 1;
     private Bitmap page;
     private ZipBook book;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -107,11 +111,25 @@ public class Book extends AppCompatActivity {
 
         File bookFile = new File(Environment.getExternalStorageDirectory() + File.separator + "ComicBooks"+ File.separator + fileName);
         book = new ZipBook(bookFile);
-        if(book.getAllPages() == 1){
-            page = book.getPageBm(pageNumber);
-        }else{
-            Log.d("404", "Enable to load page ");
-        }
+
+        // Decompressage asynchrone pour pouvoir afficher la premiere page alors que le dossier
+        // n'est pas integralement decompresse
+        Thread thread = new Thread() {
+            @Override
+            public void run() {
+
+                book.getAllPages();
+
+            }
+        };
+
+        thread.start();
+        // On attends une demi seconde pour etre sure que au moins la premiere image est bien
+        // decompresse
+        sleep(500);
+
+        page = book.getPageBm(pageNumber);
+
 
 
 
@@ -133,6 +151,7 @@ public class Book extends AppCompatActivity {
         // operations to prevent the jarring behavior of controls going away
         // while interacting with the UI.
 //        findViewById(R.id.dummy_button).setOnTouchListener(mDelayHideTouchListener);
+
     }
 
     @Override
