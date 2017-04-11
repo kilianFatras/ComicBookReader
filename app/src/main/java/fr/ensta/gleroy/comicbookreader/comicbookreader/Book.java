@@ -42,9 +42,10 @@ public class Book extends AppCompatActivity {
      * Some older devices needs a small delay between UI widget updates
      * and a change of the status and navigation bar.
      */
-    private static final int UI_ANIMATION_DELAY = 300;
+    private static final int UI_ANIMATION_DELAY = 0;
     private final Handler mHideHandler = new Handler();
     private View mContentView;
+    private ImageView pageView;
     private final Runnable mHidePart2Runnable = new Runnable() {
         @SuppressLint("InlinedApi")
         @Override
@@ -138,6 +139,7 @@ public class Book extends AppCompatActivity {
         mVisible = true;
         mControlsView = findViewById(R.id.fullscreen_content_controls);
         mContentView = findViewById(R.id.fullscreen_content);
+        pageView = (ImageView) findViewById(R.id.page_image);
 
 
         // Set up the user interaction to manually show or hide the system UI.
@@ -147,8 +149,8 @@ public class Book extends AppCompatActivity {
                 toggle();
             }
         });
-
-        mContentView.setBackground(new BitmapDrawable(page));
+        pageView.setImageBitmap(page);
+//        mContentView.setBackground(new BitmapDrawable(page));
         // Upon interacting with UI controls, delay any scheduled hide()
         // operations to prevent the jarring behavior of controls going away
         // while interacting with the UI.
@@ -156,13 +158,10 @@ public class Book extends AppCompatActivity {
 
         mContentView.setOnTouchListener(new OnSwipeTouchListener(Book.this) {
 
-            @Override
-            public boolean onTouch(View v, MotionEvent event) {
-                toggle();
-                return super.onTouch(v,event);
-            }
+
             public void onSwipeTop() {
                 Log.d("Swipe", "top");
+                toggle();
 
             }
             public void onSwipeRight() {
@@ -174,7 +173,9 @@ public class Book extends AppCompatActivity {
                 nextPage(mContentView);
             }
             public void onSwipeBottom() {
+
                 Log.d("Swipe", "Bottom");
+                toggle();
             }
 
         });
@@ -204,7 +205,8 @@ public class Book extends AppCompatActivity {
         }
         else pageNumber += 1;
         page = book.getPageBm(pageNumber);
-        mContentView.setBackground(new BitmapDrawable(page));
+        pageView.setImageBitmap(page);
+//        mContentView.setBackground(new BitmapDrawable(page));
         Log.d("Page", Integer.toString(pageNumber));
 
     }
@@ -215,7 +217,8 @@ public class Book extends AppCompatActivity {
         }
         else pageNumber -= 1;
         page = book.getPageBm(pageNumber);
-        mContentView.setBackground(new BitmapDrawable(page));
+//        mContentView.setBackground(new BitmapDrawable(page));
+        pageView.setImageBitmap(page);
         Log.d("Page", Integer.toString(pageNumber));
     }
 
