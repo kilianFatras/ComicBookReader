@@ -4,6 +4,7 @@ package fr.ensta.gleroy.comicbookreader.comicbookreader;
  * Created by Kilian on 03/04/2017.
  */
 import android.content.Context;
+import android.util.Log;
 import android.view.GestureDetector;
 import android.view.GestureDetector.SimpleOnGestureListener;
 import android.view.MotionEvent;
@@ -25,7 +26,7 @@ public class OnSwipeTouchListener implements OnTouchListener {
 
     private final class GestureListener extends SimpleOnGestureListener {
 
-        private static final int SWIPE_THRESHOLD = 200;
+        private static final int SWIPE_THRESHOLD = 800;
         private static final int SWIPE_VELOCITY_THRESHOLD = 150;
 
         @Override

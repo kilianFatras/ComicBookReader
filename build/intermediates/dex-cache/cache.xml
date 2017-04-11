@@ -25,7 +25,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="eb07ddbfe18f1520a61ef760526fffb91e74c640">
+        sha1="f5f60868258301a4b41e2b9833da78d87ac2ae8e">
         <dex dex="/home/gleroy/ComicBookReader/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_d3dd008944950a171cdcc72a761d2681a149c577/classes.dex" />
     </item>
     <item
@@ -43,7 +43,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="8d5ffd66c1a8070e240cf3abeab32656ca8b5c94">
+        sha1="77a2d559fec0b76bbdddc518053d29f46be2ef82">
         <dex dex="/home/gleroy/ComicBookReader/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_2ef922732240880232295f0876fc956052f3c873/classes.dex" />
     </item>
     <item
