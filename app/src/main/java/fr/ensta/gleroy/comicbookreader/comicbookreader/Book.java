@@ -45,7 +45,7 @@ public class Book extends AppCompatActivity {
     private static final int UI_ANIMATION_DELAY = 0;
     private final Handler mHideHandler = new Handler();
     private View mContentView;
-    private ZoomableImageView pageView;
+    private TouchImageView pageView;
     private final Runnable mHidePart2Runnable = new Runnable() {
         @SuppressLint("InlinedApi")
         @Override
@@ -139,7 +139,7 @@ public class Book extends AppCompatActivity {
         mVisible = true;
         mControlsView = findViewById(R.id.fullscreen_content_controls);
         mContentView = findViewById(R.id.fullscreen_content);
-        pageView = (ZoomableImageView) findViewById(R.id.page_image);
+        pageView = (TouchImageView) findViewById(R.id.page_image);
 //        pageView = (ImageView) findViewById(R.id.page_image);
 
 
@@ -157,7 +157,7 @@ public class Book extends AppCompatActivity {
         // while interacting with the UI.
 //        findViewById(R.id.dummy_button).setOnTouchListener(mDelayHideTouchListener);
 
-        mContentView.setOnTouchListener(new OnSwipeTouchListener(Book.this) {
+        pageView.setOnTouchListener(new OnSwipeTouchListener(Book.this) {
 
 
             public void onSwipeTop() {

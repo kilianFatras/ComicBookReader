@@ -21,7 +21,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:fitsSystemWindows="true">
-        <fr.ensta.gleroy.comicbookreader.comicbookreader.ZoomableImageView
+        <fr.ensta.gleroy.comicbookreader.comicbookreader.TouchImageView
             android:id="@+id/page_image"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
