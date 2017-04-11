@@ -45,7 +45,7 @@ public class Book extends AppCompatActivity {
     private static final int UI_ANIMATION_DELAY = 0;
     private final Handler mHideHandler = new Handler();
     private View mContentView;
-    private ImageView pageView;
+    private ZoomableImageView pageView;
     private final Runnable mHidePart2Runnable = new Runnable() {
         @SuppressLint("InlinedApi")
         @Override
@@ -139,7 +139,8 @@ public class Book extends AppCompatActivity {
         mVisible = true;
         mControlsView = findViewById(R.id.fullscreen_content_controls);
         mContentView = findViewById(R.id.fullscreen_content);
-        pageView = (ImageView) findViewById(R.id.page_image);
+        pageView = (ZoomableImageView) findViewById(R.id.page_image);
+//        pageView = (ImageView) findViewById(R.id.page_image);
 
 
         // Set up the user interaction to manually show or hide the system UI.
